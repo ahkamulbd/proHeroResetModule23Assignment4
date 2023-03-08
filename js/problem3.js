@@ -11,3 +11,18 @@ Problem 3: Is Less or Greater than seven
 
         Input: 15;  Output: 30        
 */
+
+function isLGSeven(number) {
+    let difference = number - 7;
+    let double = number * 2;
+
+    if (difference < 7) {
+        return difference;
+    }
+    else {
+        return double;
+    }
+}
+
+const result = isLGSeven(15);
+console.log(result);
