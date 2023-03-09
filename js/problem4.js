@@ -13,6 +13,10 @@ Problem 4: Finding Bad data
         Input: [ -4, -9, -5, -33, -55 ]; Output: 5   
 */
 
+/* ============ Problem 4: ============== */
+
+/* Function Description: This function will take a array parameter. It will check whether negative elements exist in that array and return the number of negative elements as badData.  */
+
 function findingBadData(numbers) {
         let badData = [];
         for (let i = 0; i < numbers.length; i++) {

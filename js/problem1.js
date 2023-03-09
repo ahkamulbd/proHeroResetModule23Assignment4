@@ -14,6 +14,10 @@ Problem 1: Let’s play a mind game
         Input: 33; Output: 49.5
 */
 
+/* ============ Problem 1: ============== */
+
+/* Function Description: Taking a number parameter, mindGame Function will work with number parameter by multiplying 3, adding 10, dividing 2 and subtracting 5 respectively. Then it will return the result. */
+
 function mindGame(number) {
     let numberMultiplied = number * 3;
     let numberAdded = numberMultiplied + 10;
@@ -21,7 +25,12 @@ function mindGame(number) {
     let numberSubtracted = numberDivided - 5;
     let numberSubtractedFixed = numberSubtracted.toFixed(1);
 
-    return numberSubtractedFixed;
+    if (typeof number !== 'number') {
+        return 'Please Enter a number';
+    }
+    else {
+        return numberSubtractedFixed;
+    }
 }
 
 const result = mindGame(33);

@@ -12,6 +12,10 @@ Problem 3: Is Less or Greater than seven
         Input: 15;  Output: 30        
 */
 
+/* ============ Problem 3: ============== */
+
+/* Function Description: This function will take a parameter as a number. If difference between number and 7 is greater than 7 will return that difference, otherwise it will return the double of the number parameter */
+
 function isLGSeven(number) {
     let difference = number - 7;
     let double = number * 2;

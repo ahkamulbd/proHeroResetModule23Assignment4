@@ -20,6 +20,10 @@ Problem 5: Convert your gems into diamond
         Input: 100, 5, 1;  Output: 303
 */
 
+/* ============ Problem 5: ============== */
+
+/* Function Description: This function will take 3 numbers as a parameter which indicates the number of gems of 3 friends. It will multiply these numbers with their power i.e. a * 21 and add the results of multiplication which indicates total diamond. If the total diamond is greater than 2000, it will return the total by subtracting 2000. Otherwise, it will return total gems only.   */
+
 function gemsToDiamond(a, b, c) {
         let firstFriendGems = a * 21;
         let secondFriendGems = b * 32;

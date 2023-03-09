@@ -12,18 +12,22 @@ Problem 2: Finding even or odd
         Input: ‘chatgpt’; Output: odd
 */
 
+/* ============ Problem 2: ============== */
+
+/* Function Description: This function will take a parameter as a text i.e. string. It will return whether the number of character in that string is even or odd.  */
+
 function evenOdd(text) {
-        for (let i = 0; i < text.length; i++) {
-                let textLength = text.length;
-                if (textLength % 2 === 0) {
-                        return 'even';
-                }
-                else {
-                        return 'odd';
-                }
+
+        let textLength = text.length;
+
+        if (textLength % 2 === 0) {
+                return 'even';
+        }
+        else {
+                return 'odd';
         }
 }
 
-const myString = 'chatgpt';
+const myString = 'Batch7';
 const string = evenOdd(myString);
 console.log(string);
