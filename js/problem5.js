@@ -19,3 +19,21 @@ Problem 5: Convert your gems into diamond
 
         Input: 100, 5, 1;  Output: 303
 */
+
+function gemsToDiamond(a, b, c) {
+        let firstFriendGems = a * 21;
+        let secondFriendGems = b * 32;
+        let ThirdFriendGems = c * 43;
+        let totalGems = firstFriendGems + secondFriendGems + ThirdFriendGems;
+        let restDiamond = totalGems - 2000;
+
+        if (totalGems > 2000) {
+                return restDiamond;
+        }
+        else {
+                return totalGems;
+        }
+}
+
+const gettingGems = gemsToDiamond(100, 5, 1);
+console.log(gettingGems);
