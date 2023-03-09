@@ -12,3 +12,20 @@ Problem 4: Finding Bad data
 
         Input: [ -4, -9, -5, -33, -55 ]; Output: 5   
 */
+
+function findingBadData(numbers) {
+        let badData = [];
+        for (let i = 0; i < numbers.length; i++) {
+                let number = numbers[i];
+                if (number < 0) {
+                        badData.push(number);
+                }
+        }
+        return badData.length;
+}
+
+//const inputData = [1, 2, 5, -4, -9, -5, -33, -55, 2, -5, -7, -13];
+const inputData = [-5, -7, -13, -33, -55];
+
+const countBadData = findingBadData(inputData);
+console.log(countBadData);
